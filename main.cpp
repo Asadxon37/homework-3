@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < vehicles.size(); i++) {
         Vehicle* ptr = vehicles[i];
         ptr->getInfo();
-        ptr->Vehicle::getInfo();
+        // ptr->Vehicle::getInfo();
         cout << "---------------------------" << endl;
     }
     // Clean up allocated memory
