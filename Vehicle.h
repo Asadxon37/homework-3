@@ -13,8 +13,8 @@ public:
         showBaseInfo();
     };
     void showBaseInfo()const {
-        cout<<"Vehicle class:: Brand : "<<brand<<endl;
-        cout<<"Vehicle class:: Year : "<<year<<endl;
+        cout<<"Vehicle class:: Brand: "<<brand<<endl;
+        cout<<"Vehicle class:: Year: "<<year<<endl;
     }
 };
 
