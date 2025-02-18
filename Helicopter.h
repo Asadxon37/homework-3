@@ -9,7 +9,7 @@ class Helicopter:public AirVehicle {
     Helicopter(string b, int y,int ml,int rc):AirVehicle(b,y,ml),rotorCount(rc){}
     void getInfo()const override{
         cout << "Helicopter class:: Rotor count: " << rotorCount << endl;
-        showBaseInfo();
+        AirVehicle::getInfo();
     }
 };
 #endif //HELICOPTER_H

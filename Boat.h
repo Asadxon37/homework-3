@@ -9,7 +9,7 @@ class Boat:public WaterVehicle {
     Boat(string b, int y,string vt,double len):WaterVehicle(b,y,vt),length(len){}
     void getInfo() const override {
         cout << "Boat class:: Length: " << length << " meters" << endl;
-        showBaseInfo();
+        WaterVehicle::getInfo();
     }
 };
 #endif //BOAT_H

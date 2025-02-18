@@ -10,7 +10,7 @@ class WaterVehicle : public Vehicle {
     virtual ~WaterVehicle() {}
     void getInfo() const override {
         cout << "WaterVehicle class:: Vessel type: " << vesselType << endl;
-        showBaseInfo();
+        cout << "Vehicle class:: Brand: " << brand << "\nVehicle class:: Year: " << year << endl;
     }
 };
 #endif //WATERVEHICLE_H

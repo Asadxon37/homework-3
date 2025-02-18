@@ -9,13 +9,8 @@ class Vehicle {
 public:
     Vehicle(string b, int y):brand(b),year(y){}
     virtual ~Vehicle(){}
-    virtual void getInfo()const {
-        showBaseInfo();
-    };
-    void showBaseInfo()const {
-        cout<<"Vehicle class:: Brand: "<<brand<<endl;
-        cout<<"Vehicle class:: Year: "<<year<<endl;
-    }
+    virtual void getInfo()const=0;
+
 };
 
 

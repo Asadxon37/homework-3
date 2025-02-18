@@ -10,7 +10,7 @@ class AirVehicle : public Vehicle {
     virtual ~AirVehicle() {}
     void getInfo() const override {
         cout << "AirVehicle class:: Max altitude: " << maxAltitude << " meters" << endl;
-        showBaseInfo();
+        cout << "Vehicle class:: Brand: " << brand << "\nVehicle class:: Year: " << year << endl;
     }
 
 };

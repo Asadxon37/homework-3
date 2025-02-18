@@ -7,10 +7,9 @@ class LandVehicle : public Vehicle {
     int numWheels;
     public:
     LandVehicle(string b,int y, int w):Vehicle(b,y),numWheels(w){}
-    virtual ~LandVehicle() {}
     void getInfo()const override {
-        cout<<"LandVehicle class:: Number of wheels: " << numWheels << endl;
-        showBaseInfo();
+        cout << "LandVehicle class:: Number of wheels: " << numWheels << endl;
+        cout << "Vehicle class:: Brand: " << brand << "\nVehicle class:: Year: " << year << endl;
     }
 };
 

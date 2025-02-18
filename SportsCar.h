@@ -9,7 +9,7 @@ class SportsCar : public Car {
     SportsCar(string b, int y,int w, int d,int s):Car(b,y,w,d),speed(s){}
     void getInfo()const override {
         cout<< "SportsCar class:: Max speed: " << speed << " km/h" << endl;
-        showBaseInfo();
+        Car::getInfo();
     }
 };
 #endif //SPORTSCAR_H

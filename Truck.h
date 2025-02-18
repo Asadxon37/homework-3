@@ -9,7 +9,7 @@ class Truck:public LandVehicle {
     Truck(string b,int y, int w, double l):LandVehicle(b,y,w),loadCapacity(l){}
     void getInfo() const override {
         cout << "Truck class:: Load capacity: " << loadCapacity << " tons" << endl;
-        showBaseInfo();
+        LandVehicle::getInfo();
     }
 };
 #endif //TRUCK_H
