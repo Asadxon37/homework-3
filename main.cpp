@@ -1,12 +1,17 @@
 #include <iostream>
-#include "Car.h"
-#include "SportsCar.h"
-#include "Truck.h"
-#include "Helicopter.h"
-#include "Boat.h"
-#include "Submarine.h"
 #include <vector>
+#include "Vehicle.h"
+#include "Boat.h"
+#include "Car.h"
+#include "Helicopter.h"
+#include "Submarine.h"
+#include "Truck.h"
+#include "AirVehicle.h"
+#include "LandVehicle.h"
+#include "SportsCar.h"
+#include "WaterVehicle.h"
 using namespace std;
+
 int main() {
     vector<Vehicle*> vehicles;
     vehicles.push_back(new LandVehicle("LandBrand", 2020, 4));
@@ -22,8 +27,8 @@ int main() {
     // Iterate through the vector and call getInfo() for each vehicle
     for (int i = 0; i < vehicles.size(); i++) {
         Vehicle* ptr = vehicles[i];
-        ptr->getInfo();
-        // ptr->Vehicle::getInfo();
+        cout << ptr->getInfo();
+        //ptr->Vehicle::getInfo();
         cout << "---------------------------" << endl;
     }
     // Clean up allocated memory
@@ -31,5 +36,5 @@ int main() {
         delete vehicles[i];
     }
     return 0;
-}
 
+}

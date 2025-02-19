@@ -1,15 +1,14 @@
 #ifndef CAR_H
 #define CAR_H
-#include <iostream>
 #include "LandVehicle.h"
-using namespace std;
 class Car:public LandVehicle {
     int numDoors;
     public:
-    Car(string b, int y,int w, int d):LandVehicle(b,y,w),numDoors(d){}
-    void getInfo() const override {
-        cout<< "Car class:: Number of doors:" << numDoors << endl;
-        LandVehicle::getInfo();
+    Car(string b, int y,int w, int d):LandVehicle(b,y,w),numDoors(d) {
+        this->numDoors =d;
+    }
+    string getInfo() const override {
+       return "Car class:: Number of doors: " + to_string(numDoors) + "\nVehicle class:: Brand: " + brand + "\nVehicle class:: Year: " + to_string(year) + "\n";
     }
 };
 #endif //CAR_H

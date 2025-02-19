@@ -7,9 +7,8 @@ class Submarine:public WaterVehicle {
     int maxDepth;
 public:
     Submarine(string b, int y,string vt,int md):WaterVehicle(b,y,vt),maxDepth(md){}
-    void getInfo() const override {
-        cout << "Submarine class:: Max depth: " << maxDepth << " meters" << endl;
-        WaterVehicle::getInfo();
+    string getInfo() const override {
+        return "Submarine class:: Max depth: " + to_string(maxDepth) + " meters\nVehicle class:: Brand: " + brand + "\nVehicle class:: Year: " + to_string(year) + "\n";
     }
 };
 #endif //SUBMARINE_H

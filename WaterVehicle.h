@@ -8,9 +8,8 @@ class WaterVehicle : public Vehicle {
     public:
     WaterVehicle(string b, int y,string vt):Vehicle(b,y),vesselType(vt){}
     virtual ~WaterVehicle() {}
-    void getInfo() const override {
-        cout << "WaterVehicle class:: Vessel type: " << vesselType << endl;
-        cout << "Vehicle class:: Brand: " << brand << "\nVehicle class:: Year: " << year << endl;
+    string getInfo() const override {
+        return "WaterVehicle class:: Vessel type: " + vesselType + "\nVehicle class:: Brand: " + brand + "\nVehicle class:: Year: " + to_string(year) + "\n";
     }
 };
 #endif //WATERVEHICLE_H
